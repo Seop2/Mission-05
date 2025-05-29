@@ -20,6 +20,10 @@
   width: 100%;
   margin-left: 12px;
 }
+.con {
+  margin: 0 auto;
+  width: 1020px;
+}
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
@@ -27,6 +31,46 @@
 .icon {
   width: 20px;
   height: 20px;
+}
+.navigation {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 220px;
+}
+
+.navigation__inner {
+  padding: 10px;
+}
+
+.navigation__list > li {
+  position: relative;
+}
+
+.navigation__list > li > a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.navigation__list > li > a:hover {
+  background-color: #f1f1f1;
+}
+
+.navigation__list > li ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 10;
+}
+
+.navigation__list > li.is--active > ul {
+  display: block;
 }
 /* ---------------------------------------------- */
 
@@ -40,4 +84,80 @@
 
 /* ---------------------------------------------- */
 /* 푸터                                            */
+.footer {
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 15px;
+  justify-content: center;
+  background-color: var(--color-gray-200);
+}
+.con {
+  width: 1020px;
+  margin: 0 auto;
+}
+.con-flex {
+  width: 1020px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer__info-wrap {
+  display: flex;
+  gap: 62px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: 300px;
+  height: 40px;
+  background-image: url("/assets/logo/logo-mono.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__phone a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.rel {
+  position: relative;
+}
+.footer__sns {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+.footer__bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  height: 102px;
+  color: var(--color-gray-200);
+  background-color: var(--color-gray-900);
+}
+
+.instar {
+  /* instagramBackground */
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(
+    174.12deg,
+    #285aeb 5.61%,
+    #bc1888 22.32%,
+    #cc2366 36.16%,
+    #dc2743 51.91%,
+    #e6683c 73.38%,
+    #f09433 91.99%
+  );
+}
 /* ---------------------------------------------- */
