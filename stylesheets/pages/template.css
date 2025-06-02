@@ -85,7 +85,7 @@
 .footer__logo {
   width: 200px;
   height: 40px;
-  background-image: url("/assets/logo/logo-mono.svg");
+  background-image: url("./assets/logo/logo-mono.svg");
   background-repeat: no-repeat;
 }
 
