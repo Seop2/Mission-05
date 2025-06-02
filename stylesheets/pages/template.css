@@ -6,7 +6,7 @@
   background-color: var(--color-blue-600);
   color: var(--color-white);
   width: 110px;
-  height: 116px;
+  height: 117px;
 }
 .svg-box {
   position: absolute;
@@ -18,25 +18,74 @@
 }
 .svg-box svg {
   width: 100%;
+  display: block;
   margin-left: 12px;
+}
+.button--category:focus {
+  outline: none;
+  box-shadow: 5px 5px 5px var(--color-gray-300);
+  border-radius: 5px;
 }
 
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
 /* 내비게이션 
-
 */
+header,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 .icon {
   width: 20px;
   height: 20px;
 }
-
+.navigation__list {
+  position: relative;
+}
+.navigation__list {
+  width: 180px;
+  height: auto;
+  border: 3px solid var(--color-gray-300);
+}
 .navigation__list > li > a {
   display: flex;
   align-items: center;
   padding: 10px;
   font-weight: 500;
+}
+/* 2Depth 메뉴 기본 숨김 */
+.navigation__list li > ul {
+  display: none;
+  padding-left: 20px;
+  margin-top: 6px;
+}
+
+/* 2Depth 메뉴 활성화 시 표시 */
+.navigation__list li > ul.is--active {
+  display: block;
+}
+.navigation__list li > ul {
+  display: none;
+  position: absolute;
+  top: -9px;
+  left: 178px; /* 1Depth 너비 기준 조절 */
+  width: 180px;
+  height: 644px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.navigation__list li > ul > li > a {
+  display: block;
+  padding: 6px 12px;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 /* ---------------------------------------------- */
