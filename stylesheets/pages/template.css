@@ -20,10 +20,7 @@
   width: 100%;
   margin-left: 12px;
 }
-.con {
-  margin: 0 auto;
-  width: 1020px;
-}
+
 /* ---------------------------------------------- */
 
 /* ---------------------------------------------- */
@@ -85,7 +82,7 @@
 .footer__logo {
   width: 200px;
   height: 40px;
-  background-image: url("./assets/logo/logo-mono.svg");
+  background-image: url("../assets/logo/logo-mono.svg");
   background-repeat: no-repeat;
 }
 
