@@ -28,6 +28,7 @@
 */
 ul {
   margin: 0;
+  padding: 0;
 }
 .icon {
   width: 20px;
@@ -50,6 +51,7 @@ ul {
   width: 170px;
   height: 30px;
   margin-left: 25px;
+  margin-top: 5px;
 }
 .navigation__list > li svg {
   opacity: 0;
@@ -63,20 +65,26 @@ ul {
   left: 30%;
   width: 180px;
   height: 500px;
-  background-color: #cc2366;
 }
 
 .navigation__list li > ul > li > ul {
   position: absolute;
   right: 0%;
   left: 100%;
-  background-color: #285aeb;
 }
 
 .navigation__list li > ul.is--active {
   display: block;
 }
-
+.navigation__list li > a {
+  display: inline-block;
+  position: relative;
+  width: inherit;
+}
+.navigation__list li > a > svg {
+  position: absolute;
+  right: 15%;
+}
 .navigation__list li > a.is--active {
   color: var(--color-blue-600);
   font-weight: bold;
