@@ -40,6 +40,8 @@ ul {
   height: 500px;
   font-size: 12px;
   position: relative;
+  padding-top: 10px;
+  box-shadow: 0 10px 20px var(--color-gray-700), 0 6px 6px var(--color-gray-700);
 }
 /* .navigation__list > li > a {
   display: flex;
@@ -50,9 +52,10 @@ ul {
 .navigation__list li {
   width: 170px;
   height: 30px;
-  margin-left: 25px;
-  margin-top: 5px;
+  margin-left: 20px;
+  line-height: 30px;
 }
+
 .navigation__list > li svg {
   opacity: 0;
   margin-right: 5px;
@@ -66,6 +69,15 @@ ul {
   width: 180px;
   height: 500px;
 }
+.navigation__list li > ul::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 1px;
+  height: 500px;
+  background: var(--color-gray-300);
+}
 
 .navigation__list li > ul > li > ul {
   position: absolute;
@@ -75,7 +87,9 @@ ul {
 
 .navigation__list li > ul.is--active {
   display: block;
+  padding-top: 10px;
 }
+
 .navigation__list li > a {
   display: inline-block;
   position: relative;
@@ -83,7 +97,8 @@ ul {
 }
 .navigation__list li > a > svg {
   position: absolute;
-  right: 15%;
+  top: 30%;
+  right: 25%;
 }
 .navigation__list li > a.is--active {
   color: var(--color-blue-600);
@@ -92,7 +107,20 @@ ul {
 .navigation__list li > a.is--active svg {
   opacity: 1;
 }
-
+.navigation__list li > ul > li > ul > li:first-child:hover {
+  color: var(--color-blue-600);
+  font-weight: bold;
+}
+.navigation__list li > ul > li > ul > li:first-child:focus {
+  color: var(--color-blue-600);
+  font-weight: bold;
+}
+.new {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../../assets/icon/new.svg);
+}
 /* ---------------------------------------------- */
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
@@ -112,9 +140,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 15px;
   justify-content: center;
   background-color: var(--color-gray-200);
+  padding: 5px 14px;
 }
 .con {
   width: 1020px;
